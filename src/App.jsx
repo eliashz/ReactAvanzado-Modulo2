@@ -1,10 +1,10 @@
-
+import { Text } from './components/atoms'
 
 function App() {
 
   return (
     <div className="App">
-      Holi!
+      <Text>Holi!</Text>
     </div>
   )
 }
