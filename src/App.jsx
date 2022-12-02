@@ -1,5 +1,4 @@
-/* eslint-disable react/react-in-jsx-scope */
-import { Text } from './components/atoms';
+import Text from './components/atoms';
 import { colors } from './styles';
 
 function App() {
