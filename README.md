@@ -3,6 +3,10 @@
 1. Instalación de dependencias: `npm i`
 2. Ejecución de la aplicación: `npm run dev`
 
+### CodeSandbox
+* [React](https://mps2hc.sse.codesandbox.io/)
+* [Código](https://codesandbox.io/s/7l5h7d)
+
 ### Documentación
 * [Vite](https://es.vitejs.dev/guide/)
 * [Estructura de archivos en React](https://es.reactjs.org/docs/faq-structure.html) 
