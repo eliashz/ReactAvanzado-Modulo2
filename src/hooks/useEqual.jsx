@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 
 const useEqual = (setEqual, equal, shape, size, color) => {
-    //console.log(size);
     useEffect(() => {
         setEqual({...equal, [shape]: { size, color }})
         if (equal.Triangle.size === equal.Square.size && equal.Square.size === equal.Circle.size) alert("Todas las figuras tienen el mismo tamaño.")
