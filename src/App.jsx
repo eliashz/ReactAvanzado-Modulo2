@@ -5,8 +5,8 @@ import './styles/styles.css'
 function App() {
   const [equal, setEqual] = useState({ 
     Triangle: {size: '100', color: '#FF0000'},
-    Circle: {size: '15', color: '#00FF00'},
-    Square: {size: '00', color: '#0000FF'}
+    Circle: {size: '150', color: '#00FF00'},
+    Square: {size: '200', color: '#0000FF'}
   });
 
   return (
