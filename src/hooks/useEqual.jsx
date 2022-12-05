@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
 const useEqual = (setEqual, equal, shape, size, color) => {
     useEffect(() => {
