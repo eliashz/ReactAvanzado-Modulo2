@@ -5,7 +5,7 @@
 
 ### CodeSandbox
 * [React](https://mps2hc.sse.codesandbox.io/)
-* [Código](https://codesandbox.io/s/7l5h7d)
+* [Código](https://codesandbox.io/s/github/eliashz/ReactAvanzado-Modulo2)
 
 ### Documentación
 * [Vite](https://es.vitejs.dev/guide/)
