@@ -2,16 +2,14 @@ import React, { useEffect } from 'react'
 import { useState } from "react"
 import Figure from "./Figure"
 
-const Selector = ({ shape, shapeSize, shapeColor, setEqual, equal }) => {
+const Selector = ({ shape, shapeSize, shapeColor }) => {
   const [size, setSize] = useState(shapeSize)
   const [color, setColor] = useState(shapeColor)
-  console.log(shapeSize);
-  useEffect(() => {
-    equal[shape].size = shapeSize
-    equal[shape].color = shapeColor
-    console.log(equal);
-
-  }, [shapeSize, shapeColor])
+  const [equal, setEqual] = useState({ 
+    Triangle: {size: '100', color: '#FF0000'},
+    Circle: {size: '150', color: '#00FF00'},
+    Square: {size: '200', color: '#0000FF'}
+  });
 
   return (
     <div style={{marginBottom: '50px'}}>
@@ -21,7 +19,7 @@ const Selector = ({ shape, shapeSize, shapeColor, setEqual, equal }) => {
         <div>
             {shape} Color <input type="color" value={color} onChange={e => setColor(e.target.value)}/>
         </div>
-        <Figure shape={shape} shapeSize={size} shapeColor={color} />
+        <Figure shape={shape} shapeSize={size} shapeColor={color} setEqual={setEqual} equal={equal} />
     </div>
   )
 }
