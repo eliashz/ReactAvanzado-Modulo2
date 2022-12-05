@@ -3,14 +3,19 @@ import Selector from './components/Selector'
 import './styles/styles.css'
 
 function App() {
-  
+  const [equal, setEqual] = useState({ 
+    Triangle: {size: '100', color: '#FF0000'},
+    Circle: {size: '15', color: '#00FF00'},
+    Square: {size: '00', color: '#0000FF'}
+  });
+
   return (
     <>
       <h3>Ejercicio useState y use Effect</h3>
       <div>
-        <Selector shape='Triangle' shapeSize='100' shapeColor='#FF0000' />
-        <Selector shape='Circle' shapeSize='150' shapeColor='#00FF00' />
-        <Selector shape='Square' shapeSize='200' shapeColor='#0000FF' />
+        <Selector shape='Triangle' shapeSize={equal.Triangle.size} shapeColor={equal.Triangle.color} setEqual={setEqual} equal={equal}/>
+        <Selector shape='Circle' shapeSize={equal.Circle.size} shapeColor={equal.Circle.color} setEqual={setEqual} equal={equal}/>
+        <Selector shape='Square' shapeSize={equal.Square.size} shapeColor={equal.Square.color} setEqual={setEqual} equal={equal} />
       </div>
     </>
   )

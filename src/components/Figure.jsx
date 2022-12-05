@@ -1,13 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import useEqual from '../hooks/useEqual'
+import React from 'react'
 import { figures } from '../styles'
 
-const Figure = ({ shape, shapeSize, shapeColor, setEqual, equal }) => {
-  useEqual(setEqual, equal, shape, shapeSize, shapeColor)
-  /* useEffect(() => {
-    setEqual({...equal, [shape]: { size: shapeSize, color: shapeColor }})
-    console.log(equal);
-  }, [shapeSize, shapeColor]) */
+const Figure = ({ shape, shapeSize, shapeColor }) => {
 
   return (
     <div style={{ ...figures[shape], backgroundColor: shapeColor, width: +shapeSize, height: +shapeSize }}  ></div>

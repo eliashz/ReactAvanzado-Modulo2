@@ -1,15 +1,12 @@
-import React, { useEffect } from 'react'
-import { useState } from "react"
+import React, { useState } from 'react'
+import useEqual from '../hooks/useEqual'
 import Figure from "./Figure"
 
-const Selector = ({ shape, shapeSize, shapeColor }) => {
+const Selector = ({ shape, shapeSize, shapeColor, setEqual, equal }) => {
   const [size, setSize] = useState(shapeSize)
   const [color, setColor] = useState(shapeColor)
-  const [equal, setEqual] = useState({ 
-    Triangle: {size: '100', color: '#FF0000'},
-    Circle: {size: '150', color: '#00FF00'},
-    Square: {size: '200', color: '#0000FF'}
-  });
+
+  useEqual(setEqual, equal, shape, size, color)
 
   return (
     <div style={{marginBottom: '50px'}}>
