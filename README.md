@@ -4,8 +4,7 @@
 2. Ejecución de la aplicación: `npm run dev`
 
 ### CodeSandbox
-* [React](https://mps2hc.sse.codesandbox.io/)
-* [Código](https://codesandbox.io/s/github/eliashz/ReactAvanzado-Modulo2)
+* [https://codesandbox.io/live/2a085e6e73d](https://codesandbox.io/live/2a085e6e73d)
 
 ### Documentación
 * [Vite](https://es.vitejs.dev/guide/)
