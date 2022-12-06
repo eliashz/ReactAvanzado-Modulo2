@@ -5,7 +5,7 @@ import Figure from "./Figure"
 const Selector = ({ shape, shapeSize, shapeColor, setEqual, equal }) => {
   const [size, setSize] = useState(shapeSize)
   const [color, setColor] = useState(shapeColor)
-
+  
   useEqual(setEqual, equal, shape, size, color)
 
   return (
@@ -16,7 +16,7 @@ const Selector = ({ shape, shapeSize, shapeColor, setEqual, equal }) => {
         <div>
             {shape} Color <input type="color" value={color} onChange={e => setColor(e.target.value)}/>
         </div>
-        <Figure shape={shape} shapeSize={size} shapeColor={color} setEqual={setEqual} equal={equal} />
+        <Figure shape={shape} shapeSize={size} shapeColor={color} />
     </div>
   )
 }
