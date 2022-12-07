@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Text } from './components/atoms'
 import { Selector } from './components/molecules'
+import { colors, dimensions } from './styles'
 import './styles/styles.css'
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <>
-      <Text>Ejercicio useState y use Effect</Text>
+      <Text fontSize={dimensions.xl}>Ejercicio useState y use Effect</Text>
       <div>
         <Selector
           shape='Triangle'
