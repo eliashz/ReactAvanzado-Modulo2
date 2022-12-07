@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import useEqual from '../../hooks/useEqual'
 import { Figure, Input } from '../atoms'
+import PropTypes from 'prop-types'
 
 const Selector = ({ shape, shapeSize, shapeColor, setEqual, equal }) => {
   const [size, setSize] = useState(shapeSize)
@@ -19,6 +20,14 @@ const Selector = ({ shape, shapeSize, shapeColor, setEqual, equal }) => {
       <Figure shape={shape} shapeSize={size} shapeColor={color} />
     </div>
   )
+}
+
+Selector.propTypes = {
+  shape: PropTypes.string.isRequired,
+  shapeSize: PropTypes.string.isRequired,
+  shapeColor: PropTypes.string.isRequired,
+  setEqual: PropTypes.func.isRequired,
+  equal: PropTypes.object,
 }
 
 export default Selector
