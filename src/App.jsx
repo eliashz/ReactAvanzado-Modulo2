@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Selector from './components/Selector'
+import { Selector } from './components/molecules'
 import './styles/styles.css'
 
 function App() {
