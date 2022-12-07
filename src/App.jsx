@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Text } from './components/atoms'
 import { Selector } from './components/molecules'
 import './styles/styles.css'
 
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <>
-      <h3>Ejercicio useState y use Effect</h3>
+      <Text>Ejercicio useState y use Effect</Text>
       <div>
         <Selector
           shape='Triangle'

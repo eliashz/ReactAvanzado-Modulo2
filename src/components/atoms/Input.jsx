@@ -3,7 +3,7 @@ import React from 'react'
 const Input = ({ children, type, setValue, value }) => {
   return (
     <div>
-      {children}{' '}
+      {children}
       <input
         type={type}
         value={value}
