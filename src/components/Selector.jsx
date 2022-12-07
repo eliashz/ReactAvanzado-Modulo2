@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import useEqual from '../hooks/useEqual'
-import Figure from './Figure'
+import Figure from './atoms/Figure'
 
 const Selector = ({ shape, shapeSize, shapeColor, setEqual, equal }) => {
   const [size, setSize] = useState(shapeSize)

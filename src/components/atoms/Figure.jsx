@@ -1,5 +1,5 @@
 import React from 'react'
-import { figures } from '../styles'
+import { figures } from '../../styles'
 
 const Figure = ({ shape, shapeSize, shapeColor }) => {
   return (
