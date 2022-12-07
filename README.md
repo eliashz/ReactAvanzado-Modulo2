@@ -7,7 +7,7 @@
 
 ### CodeSandbox
 
-- [https://codesandbox.io/live/2a085e6e73d](https://codesandbox.io/live/2a085e6e73d)
+- [https://codesandbox.io/p/github/eliashz/ReactAvanzado-Modulo2/draft/determined-gianmarco](https://codesandbox.io/p/github/eliashz/ReactAvanzado-Modulo2/draft/determined-gianmarco)
 
 ### Documentación
 
