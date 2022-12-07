@@ -18,4 +18,4 @@
 - Design system  
    <img src="https://miro.medium.com/max/1200/1*fKrxdQ-ZX0V9rZnEtvVHAg.jpeg" width='500'>
 - [ESLint](https://eslint.org/)
-- [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb): `npx install-peerdeps --dev eslint-config-airbnb`
+  - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb): `npx install-peerdeps --dev eslint-config-airbnb`
