@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Input = ({ children, type, setValue, value }) => {
   return (
@@ -13,6 +14,13 @@ const Input = ({ children, type, setValue, value }) => {
       />
     </div>
   )
+}
+
+Input.propTypes = {
+  children: PropTypes.node.isRequired,
+  type: PropTypes.string.isRequired,
+  setValue: PropTypes.func.isRequired,
+  value: PropTypes.string.isRequired,
 }
 
 export default Input
