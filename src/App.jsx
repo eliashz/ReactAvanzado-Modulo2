@@ -5,9 +5,9 @@ import { dimensions } from './styles'
 
 function App() {
   const [equal, setEqual] = useState({
-    Triangle: { size: '100', color: '#FF0000' },
-    Circle: { size: '101', color: '#00FF00' },
-    Square: { size: '102', color: '#0000FF' },
+    Triangle: { size: '99', color: '#FF0000' },
+    Circle: { size: '100', color: '#00FF00' },
+    Square: { size: '101', color: '#0000FF' },
   })
 
   return (
