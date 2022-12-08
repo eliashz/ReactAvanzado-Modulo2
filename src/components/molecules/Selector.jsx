@@ -11,7 +11,7 @@ const Selector = ({ shape, shapeSize, shapeColor, setEqual, equal }) => {
 
   return (
     <div style={{ marginBottom: '50px' }}>
-      <Input type='number' value={size} setValue={setSize}>
+      <Input type='number' value={size} min='1' style={{ width: '50px' }} setValue={setSize}>
         {shape} Size
       </Input>
       <Input type='color' setValue={setColor} value={color}>
