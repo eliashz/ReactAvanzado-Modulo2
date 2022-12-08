@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div style={{ fontFamily: "'Manrope', sans-serif" }}>
-      <Text fontSize={dimensions.xl}>Ejercicio useState y use Effect</Text>
+      <Text fontSize={dimensions.xl}>Ejercicio useState y useEffect</Text>
       <div>
         <Selector
           shape='Triangle'
