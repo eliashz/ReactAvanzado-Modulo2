@@ -9,9 +9,7 @@ Aplicación realizada con **React + Vite** donde se representa tres figuras geom
 1. Instalación de dependencias: `npm i`
 2. Ejecución de la aplicación: `npm run dev`
 
-### CodeSandbox
-
-- [https://codesandbox.io/p/github/eliashz/ReactAvanzado-Modulo2/draft/determined-gianmarco](https://codesandbox.io/p/github/eliashz/ReactAvanzado-Modulo2/draft/determined-gianmarco)
+### [CodeSandBox](https://codesandbox.io/p/github/eliashz/ReactAvanzado-Modulo2/draft/determined-gianmarco)
 
 ### Documentación
 
