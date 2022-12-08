@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Text } from './components/atoms'
 import { Selector } from './components/molecules'
 import { dimensions } from './styles'
-import './styles/styles.css'
 
 function App() {
   const [equal, setEqual] = useState({
@@ -12,7 +11,7 @@ function App() {
   })
 
   return (
-    <>
+    <div style={{ fontFamily: "'Manrope', sans-serif" }}>
       <Text fontSize={dimensions.xl}>Ejercicio useState y use Effect</Text>
       <div>
         <Selector
@@ -37,7 +36,7 @@ function App() {
           equal={equal}
         />
       </div>
-    </>
+    </div>
   )
 }
 
