@@ -11,6 +11,7 @@ const Selector = ({ shape, shapeSize, shapeColor, setFigures, figures }) => {
 
   return (
     <div style={{ marginBottom: '50px' }}>
+      {/* Aquí debería de haver un Label asocaido a cada input */}
       <Input type='number' style={{ width: '50px' }} min='1' value={size} setValue={setSize}>
         {shape} Size
       </Input>
