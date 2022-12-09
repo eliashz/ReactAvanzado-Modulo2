@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+// En este nivel children y <div> no son necesarios
 const Input = ({ children, type, style, min, setValue, value }) => {
   return (
     <div>

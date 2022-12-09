@@ -1,5 +1,8 @@
 import { useEffect } from 'react'
 
+// este hook no tiene sentido, mejor tener una función generica de igualdad entre los elementos que le pasas en la carpeta helpers.
+// Algo como:
+// const allEqual = (arr) => arr.every( v => v === arr[0] )
 const useEqual = (setFigures, figures, shape, size, color) => {
   useEffect(() => {
     figures[shape].size = size
