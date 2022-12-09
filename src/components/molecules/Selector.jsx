@@ -8,19 +8,11 @@ const Selector = ({ shape, shapeSize, shapeColor, setFigures, figures }) => {
   const [color, setColor] = useState(shapeColor)
 
   useEqual(setFigures, figures, shape, size, color)
+  console.log('1')
 
   return (
     <div style={{ marginBottom: '50px' }}>
-      <Input
-        type='number'
-        style={{ width: '50px' }}
-        min='1'
-        value={size}
-        setValue={setSize}
-        setFigures={setFigures}
-        figures={figures}
-        shape={shape}
-      >
+      <Input type='number' style={{ width: '50px' }} min='1' value={size} setValue={setSize}>
         {shape} Size
       </Input>
       <Input type='color' setValue={setColor} value={color}>
