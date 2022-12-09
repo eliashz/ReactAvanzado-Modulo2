@@ -1,17 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import useEqual from '../../hooks/useEqual'
 
-const Input = ({ children, type, setValue, value, style, min }) => {
+const Input = ({ children, type, style, min, setValue, value }) => {
   return (
     <div>
       {children}
-      <input
-        type={type}
-        value={value}
-        min={min}
-        style={style}
-        onChange={e => setValue(e.target.value)}
-      />
+      <input type={type} style={style} min={min} value={value} onChange={e => setValue(e.target.value)} />
     </div>
   )
 }
@@ -21,8 +16,8 @@ Input.propTypes = {
   type: PropTypes.string.isRequired,
   min: PropTypes.string,
   style: PropTypes.object,
-  setValue: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,
+  setValue: PropTypes.func.isRequired,
 }
 
 export default Input
