@@ -3,11 +3,11 @@ import useEqual from '../../hooks/useEqual'
 import { Figure, Input } from '../atoms'
 import PropTypes from 'prop-types'
 
-const Selector = ({ shape, shapeSize, shapeColor, setEqual, equal }) => {
+const Selector = ({ shape, shapeSize, shapeColor, setFigure, figure }) => {
   const [size, setSize] = useState(shapeSize)
   const [color, setColor] = useState(shapeColor)
 
-  useEqual(setEqual, equal, shape, size, color)
+  useEqual(setFigure, figure, shape, size, color)
 
   return (
     <div style={{ marginBottom: '50px' }}>
@@ -26,8 +26,8 @@ Selector.propTypes = {
   shape: PropTypes.string.isRequired,
   shapeSize: PropTypes.string.isRequired,
   shapeColor: PropTypes.string.isRequired,
-  setEqual: PropTypes.func.isRequired,
-  equal: PropTypes.object,
+  setFigure: PropTypes.func.isRequired,
+  figure: PropTypes.object,
 }
 
 export default Selector

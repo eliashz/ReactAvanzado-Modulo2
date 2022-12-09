@@ -1,15 +1,18 @@
 import { useEffect } from 'react'
 
-const useEqual = (setEqual, equal, shape, size, color) => {
+const useEqual = (setFigure, figure, shape, size, color) => {
   useEffect(() => {
-    setEqual({ ...equal, [shape]: { size, color } })
-    if (equal.Triangle.size === equal.Square.size && equal.Square.size === equal.Circle.size)
+    setFigure({ ...figure, [shape]: { size, color } })
+    if (figure.Triangle.size === figure.Square.size && figure.Square.size === figure.Circle.size)
       alert('Todas las figuras tienen el mismo tamaño.')
   }, [size])
 
   useEffect(() => {
-    setEqual({ ...equal, [shape]: { size, color } })
-    if (equal.Triangle.color === equal.Square.color && equal.Square.color === equal.Circle.color)
+    setFigure({ ...figure, [shape]: { size, color } })
+    if (
+      figure.Triangle.color === figure.Square.color &&
+      figure.Square.color === figure.Circle.color
+    )
       alert('Todas las figuras tienen el mismo color.')
   }, [color])
 }

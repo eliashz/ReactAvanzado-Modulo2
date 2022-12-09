@@ -4,7 +4,7 @@ import { Selector } from './components/molecules'
 import { dimensions } from './styles'
 
 function App() {
-  const [equal, setEqual] = useState({
+  const [figure, setFigure] = useState({
     Triangle: { size: '99', color: '#FF0000' },
     Circle: { size: '100', color: '#00FF00' },
     Square: { size: '101', color: '#0000FF' },
@@ -16,24 +16,24 @@ function App() {
       <div>
         <Selector
           shape='Triangle'
-          shapeSize={equal.Triangle.size}
-          shapeColor={equal.Triangle.color}
-          setEqual={setEqual}
-          equal={equal}
+          shapeSize={figure.Triangle.size}
+          shapeColor={figure.Triangle.color}
+          setFigure={setFigure}
+          figure={figure}
         />
         <Selector
           shape='Circle'
-          shapeSize={equal.Circle.size}
-          shapeColor={equal.Circle.color}
-          setEqual={setEqual}
-          equal={equal}
+          shapeSize={figure.Circle.size}
+          shapeColor={figure.Circle.color}
+          setFigure={setFigure}
+          figure={figure}
         />
         <Selector
           shape='Square'
-          shapeSize={equal.Square.size}
-          shapeColor={equal.Square.color}
-          setEqual={setEqual}
-          equal={equal}
+          shapeSize={figure.Square.size}
+          shapeColor={figure.Square.color}
+          setFigure={setFigure}
+          figure={figure}
         />
       </div>
     </div>
