@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import useEqual from '../../hooks/useEqual'
 
 const Input = ({ children, type, style, min, setValue, value }) => {
   return (
