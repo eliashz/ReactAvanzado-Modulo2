@@ -13,15 +13,22 @@ function App() {
       <div style={{ marginBottom: '50px', display: 'flex', flexDirection: 'column' }}>
         <Label>
           Triangle Size
-          <Input type='number' style={{ width: '50px' }} min='1' value={triangle[0]} setValue={setTriangle}></Input>
+          <Input
+            type='number'
+            style={{ width: '50px' }}
+            min='1'
+            setValue={setTriangle}
+            value={triangle[0]}
+            index={0}
+          ></Input>
         </Label>
         <Label>
           Triangle Color
-          <Input type='color' setValue={setTriangle} value={triangle[1]}></Input>
+          <Input type='color' setValue={setTriangle} value={triangle[1]} index={1}></Input>
         </Label>
         <Triangle size={triangle[0]} color={triangle[1]} />
-        <Circle size={circle[0]} color={circle[1]} />
-        <Square size={square[0]} color={square[1]} />
+        {/*         <Circle size={circle[0]} color={circle[1]} />
+        <Square size={square[0]} color={square[1]} /> */}
       </div>
     </div>
   )
