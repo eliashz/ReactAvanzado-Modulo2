@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import useEqual from '../../hooks/useEqual'
-import { Figure, Input, Label } from '../atoms'
+import { Triangle, Circle, Square, Input, Label } from '../atoms'
 import PropTypes from 'prop-types'
 
 const Selector = ({ shape, shapeSize, shapeColor, setFigures, figures }) => {
@@ -19,7 +19,8 @@ const Selector = ({ shape, shapeSize, shapeColor, setFigures, figures }) => {
         {shape} Color
         <Input type='color' setValue={setColor} value={color}></Input>
       </Label>
-      <Figure shape={shape} shapeSize={size} shapeColor={color} />
+      <Square shape={shape} shapeSize={size} shapeColor={color} />
+      <Circle shape={shape} shapeSize={size} shapeColor={color} />
     </div>
   )
 }
