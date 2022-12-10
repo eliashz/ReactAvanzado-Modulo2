@@ -1,10 +1,8 @@
 import React, { useDebugValue, useState } from 'react'
-import useEqual from '../../hooks/useEqual'
 import { Input, Label } from '../atoms'
 import PropTypes from 'prop-types'
 
 const Selector = ({ children, setValue, value }) => {
-  console.log(value)
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       <Label>

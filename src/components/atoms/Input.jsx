@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import onChangeHandler from '../../helpers/onChangeHandler'
+import { onChangeHandler } from '../../helpers'
 
 const Input = ({ type, style, min, setValue, valueArr, value, index }) => {
   return (
