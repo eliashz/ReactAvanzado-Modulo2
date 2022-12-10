@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Circle = ({ size, color }) => {
   return (
-    <svg height={size} width={size}>
+    <svg height={size} width={size} style={{ marginBottom: '50px' }}>
       <circle cx={size / 2} cy={size / 2} r={size / 2} fill={color} />
     </svg>
   )

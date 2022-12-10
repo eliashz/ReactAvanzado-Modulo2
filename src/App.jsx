@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Triangle, Circle, Square, Text } from './components/atoms'
 import { Selector } from './components/molecules'
+import allEqual from './helpers/allEqual'
 import { dimensions } from './styles'
 
 function App() {
@@ -9,11 +10,13 @@ function App() {
   const [square, setSquare] = useState(['101', '#0000FF'])
 
   console.log(triangle, square, circle)
+  allEqual(triangle, square, circle, 0)
+  allEqual(triangle, square, circle, 1)
 
   return (
     <div style={{ fontFamily: "'Manrope', sans-serif" }}>
       <Text fontSize={dimensions.xl}>Ejercicio useState y useEffect</Text>
-      <div style={{ marginBottom: '50px', display: 'flex', flexDirection: 'column' }}>
+      <div>
         <Selector setValue={setTriangle} value={triangle}>
           Triangle
         </Selector>
