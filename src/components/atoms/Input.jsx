@@ -16,11 +16,11 @@ const Input = ({ type, style, min, setValue, valueArr, value, index }) => {
 
 Input.propTypes = {
   type: PropTypes.string.isRequired,
-  min: PropTypes.string,
   style: PropTypes.object,
-  value: PropTypes.string.isRequired,
-  valueArr: PropTypes.array.isRequired,
+  min: PropTypes.string,
   setValue: PropTypes.func.isRequired,
+  valueArr: PropTypes.array.isRequired,
+  value: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
 }
 

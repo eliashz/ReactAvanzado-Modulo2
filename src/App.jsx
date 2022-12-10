@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Triangle, Circle, Square, Text } from './components/atoms'
 import { Selector } from './components/molecules'
-import allEqual from './helpers/allEqual'
+import { allEqual } from './helpers'
 import { dimensions } from './styles'
 
 function App() {
@@ -9,7 +9,10 @@ function App() {
   const [circle, setCircle] = useState(['100', '#00FF00'])
   const [square, setSquare] = useState(['101', '#0000FF'])
 
+  // Same size comprobation
   allEqual(triangle, square, circle, 0)
+
+  // Same color comprobation
   allEqual(triangle, square, circle, 1)
 
   return (
