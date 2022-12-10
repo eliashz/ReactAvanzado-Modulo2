@@ -1,13 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import onChangeHandler from '../../helpers/onChangeHandler'
 
 const Input = ({ type, style, min, setValue, valueArr, value, index }) => {
-  const onChangeHandler = e => {
-    const newArr = [...valueArr]
-    newArr[index] = e.target.value
-    setValue(newArr)
-  }
-  return <input type={type} style={style} min={min} value={value} onChange={onChangeHandler} />
+  return (
+    <input
+      type={type}
+      style={style}
+      min={min}
+      value={value}
+      onChange={e => onChangeHandler(e, setValue, valueArr, index)}
+    />
+  )
 }
 
 Input.propTypes = {
