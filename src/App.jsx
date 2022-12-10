@@ -8,6 +8,8 @@ function App() {
   const [circle, setCircle] = useState(['100', '#00FF00'])
   const [square, setSquare] = useState(['101', '#0000FF'])
 
+  console.log(triangle, square, circle)
+
   return (
     <div style={{ fontFamily: "'Manrope', sans-serif" }}>
       <Text fontSize={dimensions.xl}>Ejercicio useState y useEffect</Text>
