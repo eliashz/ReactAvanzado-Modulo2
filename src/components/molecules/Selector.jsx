@@ -12,11 +12,11 @@ const Selector = ({ defaultSize, defaultColor, setFigures, figures }) => {
   return (
     <div style={{ marginBottom: '50px', display: 'flex', flexDirection: 'column' }}>
       <Label>
-        Size
+        Triangle Size
         <Input type='number' style={{ width: '50px' }} min='1' value={size} setValue={setSize}></Input>
       </Label>
       <Label>
-        Color
+        Triangle Color
         <Input type='color' setValue={setColor} value={color}></Input>
       </Label>
       <Triangle size={size} color={color} />
