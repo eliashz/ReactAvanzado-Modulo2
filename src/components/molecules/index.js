@@ -1,1 +1,1 @@
-export { default as TriangleSelector } from './TriangleSelector'
+export { default as Selector } from './Selector'
