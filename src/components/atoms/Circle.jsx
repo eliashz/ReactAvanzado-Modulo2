@@ -1,17 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Circle = ({ figureSize, figureColor }) => {
+const Circle = ({ size, color }) => {
   return (
-    <svg height='200' width='200'>
-      <circle cx='100' cy='100' r='100' fill='green' />
+    <svg height={size} width={size}>
+      <circle cx={size / 2} cy={size / 2} r={size / 2} fill={color} />
     </svg>
   )
 }
 
 Circle.propTypes = {
-  figureSize: PropTypes.string.isRequired,
-  figureColor: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
 }
 
 export default Circle

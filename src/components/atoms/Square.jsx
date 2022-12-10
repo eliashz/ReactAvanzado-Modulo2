@@ -1,17 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Square = ({ figureSize, figureColor }) => {
+const Square = ({ size, color }) => {
   return (
-    <svg width='200' height='200'>
-      <rect width='200' height='200' fill='blue' />
+    <svg width={size} height={size}>
+      <rect width={size} height={size} fill={color} />
     </svg>
   )
 }
 
 Square.propTypes = {
-  figureSize: PropTypes.string.isRequired,
-  figureColor: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
 }
 
 export default Square

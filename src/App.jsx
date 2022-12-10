@@ -15,23 +15,8 @@ function App() {
       <Text fontSize={dimensions.xl}>Ejercicio useState y useEffect</Text>
       <div>
         <Selector
-          shape='Triangle'
-          shapeSize={figures.Triangle.size}
-          shapeColor={figures.Triangle.color}
-          setFigures={setFigures}
-          figures={figures}
-        />
-        <Selector
-          shape='Circle'
-          shapeSize={figures.Circle.size}
-          shapeColor={figures.Circle.color}
-          setFigures={setFigures}
-          figures={figures}
-        />
-        <Selector
-          shape='Square'
-          shapeSize={figures.Square.size}
-          shapeColor={figures.Square.color}
+          defaultSize={figures.Triangle.size}
+          defaultColor={figures.Triangle.color}
           setFigures={setFigures}
           figures={figures}
         />
