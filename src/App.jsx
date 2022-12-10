@@ -11,7 +11,7 @@ function App() {
   })
 
   return (
-    <div style={{ fontFamily: "'Manrope', sans-serif" }}>
+    <div style={{ fontFamily: "'Manrope', sans-serif", display: 'flex', flexDirection: 'column' }}>
       <Text fontSize={dimensions.xl}>Ejercicio useState y useEffect</Text>
       <div>
         <Selector

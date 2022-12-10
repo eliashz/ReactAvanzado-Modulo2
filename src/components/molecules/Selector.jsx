@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import useEqual from '../../hooks/useEqual'
-import { Figure, Input } from '../atoms'
+import { Figure, Input, Label } from '../atoms'
 import PropTypes from 'prop-types'
 
 const Selector = ({ shape, shapeSize, shapeColor, setFigures, figures }) => {
@@ -10,13 +10,15 @@ const Selector = ({ shape, shapeSize, shapeColor, setFigures, figures }) => {
   useEqual(setFigures, figures, shape, size, color)
 
   return (
-    <div style={{ marginBottom: '50px' }}>
-      <Input type='number' style={{ width: '50px' }} min='1' value={size} setValue={setSize}>
+    <div style={{ marginBottom: '50px', display: 'flex', flexDirection: 'column' }}>
+      <Label>
         {shape} Size
-      </Input>
-      <Input type='color' setValue={setColor} value={color}>
+        <Input type='number' style={{ width: '50px' }} min='1' value={size} setValue={setSize}></Input>
+      </Label>
+      <Label>
         {shape} Color
-      </Input>
+        <Input type='color' setValue={setColor} value={color}></Input>
+      </Label>
       <Figure shape={shape} shapeSize={size} shapeColor={color} />
     </div>
   )

@@ -6,7 +6,6 @@ const Input = ({ type, style, min, setValue, value }) => {
 }
 
 Input.propTypes = {
-  children: PropTypes.node.isRequired,
   type: PropTypes.string.isRequired,
   min: PropTypes.string,
   style: PropTypes.object,
