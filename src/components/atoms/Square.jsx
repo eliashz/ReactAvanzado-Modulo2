@@ -2,8 +2,8 @@ import React from 'react'
 
 const Square = () => {
   return (
-    <svg>
-      <rect width='100' height='100' />
+    <svg width='200' height='200'>
+      <rect width='200' height='200' fill='blue' />
     </svg>
   )
 }

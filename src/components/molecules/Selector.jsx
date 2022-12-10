@@ -19,8 +19,9 @@ const Selector = ({ shape, shapeSize, shapeColor, setFigures, figures }) => {
         {shape} Color
         <Input type='color' setValue={setColor} value={color}></Input>
       </Label>
-      <Square shape={shape} shapeSize={size} shapeColor={color} />
-      <Circle shape={shape} shapeSize={size} shapeColor={color} />
+      <Triangle shapeSize={size} shapeColor={color} />
+      <Circle shapeSize={size} shapeColor={color} />
+      <Square shapeSize={size} shapeColor={color} />
     </div>
   )
 }
