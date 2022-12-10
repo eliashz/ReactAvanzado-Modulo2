@@ -9,7 +9,6 @@ function App() {
   const [circle, setCircle] = useState(['100', '#00FF00'])
   const [square, setSquare] = useState(['101', '#0000FF'])
 
-  console.log(triangle, square, circle)
   allEqual(triangle, square, circle, 0)
   allEqual(triangle, square, circle, 1)
 
