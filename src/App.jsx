@@ -18,13 +18,14 @@ function App() {
             style={{ width: '50px' }}
             min='1'
             setValue={setTriangle}
+            valueArr={triangle}
             value={triangle[0]}
             index={0}
           ></Input>
         </Label>
         <Label>
           Triangle Color
-          <Input type='color' setValue={setTriangle} value={triangle[1]} index={1}></Input>
+          <Input type='color' setValue={setTriangle} valueArr={triangle} value={triangle[1]} index={1}></Input>
         </Label>
         <Triangle size={triangle[0]} color={triangle[1]} />
         {/*         <Circle size={circle[0]} color={circle[1]} />

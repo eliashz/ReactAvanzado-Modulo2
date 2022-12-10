@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Input = ({ type, style, min, setValue, value, index }) => {
+const Input = ({ type, style, min, setValue, valueArr, value, index }) => {
   const onChangeHandler = e => {
-    const arr = [...value]
-    arr[index] = e.target.value
-    setValue(arr)
+    const newArr = [...valueArr]
+    newArr[index] = e.target.value
+    setValue(newArr)
   }
   return <input type={type} style={style} min={min} value={value} onChange={onChangeHandler} />
 }
@@ -15,6 +15,7 @@ Input.propTypes = {
   min: PropTypes.string,
   style: PropTypes.object,
   value: PropTypes.string.isRequired,
+  valueArr: PropTypes.array.isRequired,
   setValue: PropTypes.func.isRequired,
   index: PropTypes.number.isRequired,
 }

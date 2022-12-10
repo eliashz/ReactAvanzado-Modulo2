@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Triangle = ({ size, color }) => {
-  console.log(size, color)
+  //console.log(size, color)
 
   return (
     <svg height={size} width={size}>
