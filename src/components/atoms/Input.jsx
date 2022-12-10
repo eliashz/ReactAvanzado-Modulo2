@@ -1,13 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Input = ({ children, type, style, min, setValue, value }) => {
-  return (
-    <div>
-      {children}
-      <input type={type} style={style} min={min} value={value} onChange={e => setValue(e.target.value)} />
-    </div>
-  )
+const Input = ({ type, style, min, setValue, value }) => {
+  return <input type={type} style={style} min={min} value={value} onChange={e => setValue(e.target.value)} />
 }
 
 Input.propTypes = {
