@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { onChangeHandler } from '../../helpers'
 
-const Input = ({ id, name, type, setValue, valueArr, value, index }) => {
+const InputColor = ({ id, name, type, setValue, valueArr, value, index }) => {
   return (
     <input
       id={id}
@@ -14,7 +14,7 @@ const Input = ({ id, name, type, setValue, valueArr, value, index }) => {
   )
 }
 
-Input.propTypes = {
+InputColor.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
@@ -24,4 +24,4 @@ Input.propTypes = {
   index: PropTypes.number.isRequired,
 }
 
-export default Input
+export default InputColor

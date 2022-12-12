@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Square = ({ size, color }) => {
+const SquareFigure = ({ size, color }) => {
   return (
     <svg width={size} height={size}>
       <rect width={size} height={size} fill={color} />
@@ -9,9 +9,9 @@ const Square = ({ size, color }) => {
   )
 }
 
-Square.propTypes = {
+SquareFigure.propTypes = {
   size: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
 }
 
-export default Square
+export default SquareFigure
