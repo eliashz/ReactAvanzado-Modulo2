@@ -1,12 +1,14 @@
 import React from 'react'
-import { Input, Label } from '../atoms'
+import { InputColor, InputNumber, Label } from '../atoms'
 import PropTypes from 'prop-types'
 
 const Selector = ({ children, setValue, value }) => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       <Label id='number'>{children} Size</Label>
-      <Input
+      <InputNumber
+        id='number'
+        name='numberSelector'
         type='number'
         style={{ width: '50px' }}
         min='1'
@@ -14,9 +16,17 @@ const Selector = ({ children, setValue, value }) => {
         valueArr={value}
         value={value[0]}
         index={0}
-      ></Input>
+      ></InputNumber>
       <Label id='color'>{children} Color</Label>
-      <Input type='color' setValue={setValue} valueArr={value} value={value[1]} index={1}></Input>
+      <InputColor
+        id='color'
+        name='colorSelector'
+        type='color'
+        setValue={setValue}
+        valueArr={value}
+        value={value[1]}
+        index={1}
+      ></InputColor>
     </div>
   )
 }
