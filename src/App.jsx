@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Triangle, Circle, Square, Text } from './components/atoms'
-import { Selector } from './components/molecules'
+import { SelectorColor, SelectorNumber } from './components/molecules'
 import { allEqual } from './helpers'
 import { dimensions } from './styles'
 
@@ -19,9 +19,9 @@ function App() {
     <div style={{ fontFamily: "'Manrope', sans-serif" }}>
       <Text fontSize={dimensions.xl}>Ejercicio useState y useEffect</Text>
       <div>
-        <Selector setValue={setTriangle} value={triangle}>
+        <SelectorNumber setValue={setTriangle} value={triangle}>
           Triangle
-        </Selector>
+        </SelectorNumber>
         <Triangle size={triangle[0]} color={triangle[1]} />
         <Selector setValue={setCircle} value={circle}>
           Circle

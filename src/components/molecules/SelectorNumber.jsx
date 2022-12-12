@@ -1,5 +1,5 @@
 import React from 'react'
-import { InputColor, InputNumber, Label } from '../atoms'
+import { InputNumber, Label } from '../atoms'
 import PropTypes from 'prop-types'
 
 const Selector = ({ children, setValue, value }) => {
@@ -17,16 +17,6 @@ const Selector = ({ children, setValue, value }) => {
         value={value[0]}
         index={0}
       ></InputNumber>
-      <Label id='color'>{children} Color</Label>
-      <InputColor
-        id='color'
-        name='colorSelector'
-        type='color'
-        setValue={setValue}
-        valueArr={value}
-        value={value[1]}
-        index={1}
-      ></InputColor>
     </div>
   )
 }

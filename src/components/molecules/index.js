@@ -1,1 +1,2 @@
-export { default as Selector } from './Selector'
+export { default as SelectorNumber } from './SelectorNumber'
+export { default as SelectorColor } from './SelectorColor'
