@@ -2,9 +2,9 @@ import React from 'react'
 import { InputNumber, Label } from '../atoms'
 import PropTypes from 'prop-types'
 
-const Selector = ({ children, setValue, value }) => {
+const SelectorNumber = ({ children, setValue, value }) => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div>
       <Label id='number'>{children} Size</Label>
       <InputNumber
         id='number'
@@ -21,10 +21,10 @@ const Selector = ({ children, setValue, value }) => {
   )
 }
 
-Selector.propTypes = {
+SelectorNumber.propTypes = {
   children: PropTypes.node.isRequired,
   setValue: PropTypes.func.isRequired,
   value: PropTypes.array.isRequired,
 }
 
-export default Selector
+export default SelectorNumber

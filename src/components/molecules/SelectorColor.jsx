@@ -2,9 +2,9 @@ import React from 'react'
 import { InputColor, Label } from '../atoms'
 import PropTypes from 'prop-types'
 
-const Selector = ({ children, setValue, value }) => {
+const SelectorColor = ({ children, setValue, value }) => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div>
       <Label id='color'>{children} Color</Label>
       <InputColor
         id='color'
@@ -19,10 +19,10 @@ const Selector = ({ children, setValue, value }) => {
   )
 }
 
-Selector.propTypes = {
+SelectorColor.propTypes = {
   children: PropTypes.node.isRequired,
   setValue: PropTypes.func.isRequired,
   value: PropTypes.array.isRequired,
 }
 
-export default Selector
+export default SelectorColor

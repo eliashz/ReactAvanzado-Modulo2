@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Triangle, Circle, Square, Text } from './components/atoms'
+import { TriangleFigure, CircleFigure, SquareFigure, Text } from './components/atoms'
 import { SelectorColor, SelectorNumber } from './components/molecules'
 import { allEqual } from './helpers'
 import { dimensions } from './styles'
@@ -22,15 +22,24 @@ function App() {
         <SelectorNumber setValue={setTriangle} value={triangle}>
           Triangle
         </SelectorNumber>
-        <Triangle size={triangle[0]} color={triangle[1]} />
-        <Selector setValue={setCircle} value={circle}>
+        <SelectorColor setValue={setTriangle} value={triangle}>
+          Triangle
+        </SelectorColor>
+        <TriangleFigure size={triangle[0]} color={triangle[1]} />
+        <SelectorNumber setValue={setCircle} value={circle}>
           Circle
-        </Selector>
-        <Circle size={circle[0]} color={circle[1]} />
-        <Selector setValue={setSquare} value={square}>
+        </SelectorNumber>
+        <SelectorColor setValue={setCircle} value={circle}>
+          Circle
+        </SelectorColor>
+        <CircleFigure size={circle[0]} color={circle[1]} />
+        <SelectorNumber setValue={setSquare} value={square}>
           Square
-        </Selector>
-        <Square size={square[0]} color={square[1]} />
+        </SelectorNumber>
+        <SelectorColor setValue={setSquare} value={square}>
+          Circle
+        </SelectorColor>
+        <SquareFigure size={square[0]} color={square[1]} />
       </div>
     </div>
   )
