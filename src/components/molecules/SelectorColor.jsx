@@ -2,7 +2,7 @@ import React from 'react'
 import { InputColor, Label } from '../atoms'
 import PropTypes from 'prop-types'
 
-const SelectorColor = ({ children, setValue, value }) => {
+const SelectorColor = ({ children, setValue, value, onChange }) => {
   return (
     <div>
       <Label id='color'>{children} Color</Label>
@@ -11,9 +11,8 @@ const SelectorColor = ({ children, setValue, value }) => {
         name='colorSelector'
         type='color'
         setValue={setValue}
-        valueArr={value}
-        value={value[1]}
-        index={1}
+        value={value}
+        onChange={onChange}
       ></InputColor>
     </div>
   )
@@ -22,7 +21,8 @@ const SelectorColor = ({ children, setValue, value }) => {
 SelectorColor.propTypes = {
   children: PropTypes.node.isRequired,
   setValue: PropTypes.func.isRequired,
-  value: PropTypes.array.isRequired,
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 }
 
 export default SelectorColor

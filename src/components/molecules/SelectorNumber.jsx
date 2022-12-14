@@ -2,7 +2,7 @@ import React from 'react'
 import { InputNumber, Label } from '../atoms'
 import PropTypes from 'prop-types'
 
-const SelectorNumber = ({ children, setValue, value }) => {
+const SelectorNumber = ({ children, setValue, value, onChange }) => {
   return (
     <div>
       <Label id='number'>{children} Size</Label>
@@ -13,9 +13,8 @@ const SelectorNumber = ({ children, setValue, value }) => {
         style={{ width: '50px' }}
         min='1'
         setValue={setValue}
-        valueArr={value}
-        value={value[0]}
-        index={0}
+        value={value}
+        onChange={onChange}
       ></InputNumber>
     </div>
   )
@@ -24,7 +23,8 @@ const SelectorNumber = ({ children, setValue, value }) => {
 SelectorNumber.propTypes = {
   children: PropTypes.node.isRequired,
   setValue: PropTypes.func.isRequired,
-  value: PropTypes.array.isRequired,
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 }
 
 export default SelectorNumber

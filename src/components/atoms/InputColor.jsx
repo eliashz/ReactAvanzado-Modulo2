@@ -1,27 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { onChangeHandler } from '../../helpers'
 
-const InputColor = ({ id, name, type, setValue, valueArr, value, index }) => {
-  return (
-    <input
-      id={id}
-      name={name}
-      type={type}
-      value={value}
-      onChange={e => onChangeHandler(e, setValue, valueArr, index)}
-    />
-  )
+const InputColor = ({ id, name, type, value, onChange }) => {
+  return <input id={id} name={name} type={type} value={value} onChange={onChange} />
 }
 
 InputColor.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  setValue: PropTypes.func.isRequired,
-  valueArr: PropTypes.array.isRequired,
   value: PropTypes.string.isRequired,
-  index: PropTypes.number.isRequired,
+  onChange: PropTypes.func.isRequired,
 }
 
 export default InputColor
