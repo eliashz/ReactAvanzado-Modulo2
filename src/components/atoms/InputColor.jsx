@@ -9,6 +9,9 @@ const InputColor = ({ id, name, type, setValue, valueArr, value, index }) => {
       name={name}
       type={type}
       value={value}
+      // Esta todo muy bien, pero para tener atomos reutilizables no puedes bajar tanta logica, sino, en otros usos no te valdran.
+      // Aquí deberia de ser onChange={onChange}
+      // En molecules, debería de ser onChange={onChange} también. Donde uses el SelectorColor, es donde deberías de tener la lógica que presentas aquí
       onChange={e => onChangeHandler(e, setValue, valueArr, index)}
     />
   )
