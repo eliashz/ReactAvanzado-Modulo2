@@ -12,7 +12,7 @@ InputNumber.propTypes = {
   style: PropTypes.object,
   min: PropTypes.string,
   value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
+  onChange: PropTypes.func,
 }
 
 export default InputNumber

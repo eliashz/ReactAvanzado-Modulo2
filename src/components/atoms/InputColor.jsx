@@ -10,7 +10,7 @@ InputColor.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
+  onChange: PropTypes.func,
 }
 
 export default InputColor
